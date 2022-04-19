@@ -9,7 +9,10 @@
 <body>
     <?php 
         //$filter = array ("bad", "word");
-        $message = "This text contains bad word";
+        //$message = "This text contains bad word";
+        $message = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque delectus fugiat eaque dolorum reprehenderit, suscipit laborum 
+        dignissimos obcaecati nisi! Voluptatibus architecto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque delectus fugiat eaque dolorum reprehenderit, suscipit laborum 
+        dignissimos obcaecati nisi! Voluptatibus architecto";
         //$message = str_replace($word, "***", $message);
         //echo $message . ' ' . $_GET['word'];
     ?>  
@@ -19,13 +22,13 @@
         ?>
     </pre>
     <h5>
-    La lunghezza del paragrafo è di:<?php  echo strlen($message); ?> caratteri
+    La lunghezza del paragrafo è di: <?php  echo strlen($message); ?> caratteri
     </h5>
     <h4>
     <?php
         var_dump($_GET);
         $word = $_GET['word'];
-        echo $word;
+        echo ('la parola da censurare è:' . "  " . $word);
         ?>
     </h4>
     <?php
