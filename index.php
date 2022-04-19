@@ -7,10 +7,15 @@
     <title>PHP Badwords</title>
 </head>
 <body>
-    <?php $name = "Pino";
+    <?php 
+        $filter = array ("bad", "word");
+        $message = "This text contains bad word";
+        $message = str_replace($filter, "***", $message);
+        echo $message;
     ?>  
     <pre>
-        <?php var_dump($name);
+        <?php 
+        var_dump($message);
         ?>
     </pre>
 </body>
